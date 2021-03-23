@@ -1,17 +1,18 @@
-/*
+
 * {
     margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 header {
     height: 77px;
     max-width: 100%;
-    background-color: #C4C4C4;
+    background:rgb(206, 206, 206);
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-end;
     flex-direction: row;
     align-items: center;
- 
 }
 
 .pageUser {
@@ -19,10 +20,14 @@ header {
     height: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
-    border: solid 1px #000;
+    margin-right: 30px;
     display: flex;
     justify-content:space-between;
     flex-direction: row;
+    align-items: center;
+    
+
+
     
 }
 
@@ -32,43 +37,96 @@ header {
     margin: 5px;
 }
 
-.pageUser  {
-
-}
 
 .pageUser a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #666666;
+    color: #555555;
     font-size: 12px;
     text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.pageUser a:hover{
+    transition:
+    color: coral;
+}
+
+/* Formulario */
+
+.login_container {
+    min-height: 400px;
+    width: 300px;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #cacaca;
+}
+
+.login_title {
+    margin-bottom: 32px;
+    color: rgb(190, 190, 190);
+}
+
+.login_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-
-
 }
-*/
 
-#elementoPai {
-    background: #d4d4d4;
-    height: 500px;
-    display: flex; 
-    flex-direction:row; /* Row, column, row-reverse e column-reverse*/
-   /* flex-wrap:nowrap;Determina se os elemntos filhos vão aceitar ou não a quebra de conteúdo */
-    justify-content:flex-start ;/*Flexstart: Os elemntos começam da esquerda para a direita*/
-  /*  justify-content:flex-end; Flexstart: Os elemntos começam da direta para a esquerda*/
-  /*  justify-content: space-around; Distribui os elemntos proporcionalmente dentro do elemnto pai */
-  /*  justify-content: space-between; Ela começa a distribuir os elemtos do centro PARA as extremidades*/
-    align-items: flex-start; /* O align-items ajuda no alinhamento vertical dos nossos items */
-    align-items: flex-end; /* Alinha do rodapá para cima*/
-    align-items: center ;  /* Alinha no meio do elemento pai*/
-    align-items: stretch; /*Esta propriedade alonga os elemntos filhos  */
+.login_input{
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
 
 }
 
+.login_input-border{
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: aquamarine;
+    transition: .3s ease-in-out;
+}
 
-.elementoFilho {
-    height: 100px;
-    width: 100px;
-    color: black;
-    -webkit-box-shadow: 0px 2px 8px 01px #000;
-    margin: 5px;
+
+.login_input-border::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(120deg, #1f73f1, #ff4c82);
+    transition: 3s;
+}
+
+.login_submit{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    background: #cccccc;
+    background-size: 200px;
+    margin-bottom: 32px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login_reset{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ff4c82;
+    text-align: center;
 }
