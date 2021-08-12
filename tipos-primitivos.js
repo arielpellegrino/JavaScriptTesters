@@ -25,3 +25,24 @@ console.log(`o tipo de n1 é ${typeof minhaVar} e seu valor é ${minhaVar}`);
 
 const isValid = true;
 console.log(`isValid: ${isValid}`);
+
+const isValidF = false;
+console.log(`isValidF: ${isValidF}`);
+
+//**** undefined, null, symbol
+
+//undefined = Variavel criada mas não atribuida
+let varTeste
+console.log(varTeste);
+console.log(typeof varTeste);
+varTeste = 10;
+console.log(varTeste);
+
+// null = Criar uma variavel e não atribuir valor a ela
+let varNull
+console.log(varNull);
+console.log(typeof varNull);
+varNull = null;
+console.log(varNull);
+
+
