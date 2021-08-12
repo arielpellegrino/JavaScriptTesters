@@ -50,10 +50,13 @@ Para uma pessoa viajar para o exterior:
 - Precisa ser maior de 19 anos
 ou 
 - Acompanhado com os pais
+E
+ter comprado o bilhete
 */
 
-let idade = 16;
+let idade = 18;
 let paisPresentes = false;
-const podeViajar = idade >= 18 || paisPresentes === true; 
+let comprouBilhete = false;
+const podeViajar = idade >= 18 || (paisPresentes  && comprouBilhete); 
 
 console.log(`Pode viajar ${podeViajar}`);
